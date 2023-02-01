@@ -31,7 +31,7 @@ $ cd etl-using-mysql
 ```
 $ docker-compose up
 ```
-# Docker Compose Explanation:
+## Docker Compose Explanation:
 
 This is docker-compose file sets up two services, "db" and "app", and a named volume "mysql-data".
 
@@ -41,7 +41,7 @@ This is docker-compose file sets up two services, "db" and "app", and a named vo
 
 - The "app" service runs "etl.py" (with python as a base image) connects to MySQL server of "db" service, loads up the CSV file performs a set of transformation, creates a table named "users_info" and loads the data in "Users" database.
 
-# Python file etl.py Explanation:
+## Python file etl.py Explanation:
 
 The python file is divided into three logical try-catch blocks.
 
@@ -63,7 +63,7 @@ Once, the execution of python file is completed you will see following output:
 ![image](https://user-images.githubusercontent.com/124141023/216142750-63c7fc7d-524a-4743-8edd-02ea4bb69f7b.png)
 
 
-# MySQL Data Validation
+## MySQL Data Validation
 
 To check whether the data inserted by the python script is loaded succesfully we perform following operations:
 
@@ -74,7 +74,7 @@ docker exec -it mysqlcontainer bash
 
 
 2. In the interactive mode run mysql command with user as root once prompted put password as "Admin123":
-``
+```
 mysql -u root -p
 ```
 
