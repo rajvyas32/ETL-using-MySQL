@@ -1,6 +1,7 @@
 version: '3'
 services:
   db:
+    container_name: mysqlcontainer
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: Admin123
