@@ -53,6 +53,10 @@ The second block is trasfomation block and prints following:
 - "Null Values Summary" and "Duplicate Values Summary"
 - "Error in reading CSV or perfoming transformation" in case of error from above operations
 
+Second block does following transformation to dataframe:
+- 1. Creates a new column "full_name" by appending "first_name" & "last_name"
+- 2. Filters all the row which doesn't contain '.com' as domain name
+
 The third block is data loading block and prints:
 - "Table users_info inserted Successfully" when the tranformed dataframe is loaded into Users database.
 - "Unable to load users_info table in Users database" in case of failure.
