@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: Admin123
+      MYSQL_DATABASE: Users
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python /app/etl.py
+    volumes:
+      - .:/app
+      # - ./SRDataEngineerChallenge_DATASET.csv:/app/SRDataEngineerChallenge_DATASET.csv
+    depends_on:
+      - db
+volumes:
+  mysql-data:
