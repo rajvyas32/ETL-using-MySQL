@@ -25,7 +25,7 @@ $ git clone https://github.com/rajvyas32/ETL-using-MySQL.git
 ```
 2. Change into the project directory.
 ```
-$ cd etl-using-mysql
+$ cd ETL-using-MySQL/ETL
 ```
 3. Start the Docker containers using Docker Compose.
 ```
