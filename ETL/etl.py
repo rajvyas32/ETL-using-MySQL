@@ -14,7 +14,7 @@ try:
 
     try:
         # Read in the CSV file
-        df = pd.read_csv('SRDataEngineerChallenge_DATASET.csv')
+        df = pd.read_csv('DATASET.csv')
         print("\nRead CSV operation succesfull \n")
 
         # Checking Nulls
