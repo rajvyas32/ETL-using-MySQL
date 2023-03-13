@@ -17,7 +17,7 @@ services:
     command: python /app/etl.py
     volumes:
       - .:/app
-      # - ./SRDataEngineerChallenge_DATASET.csv:/app/SRDataEngineerChallenge_DATASET.csv
+      # - ./DATASET.csv:/app/DATASET.csv
     depends_on:
       - db
 volumes:
