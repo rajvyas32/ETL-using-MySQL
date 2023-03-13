@@ -10,12 +10,12 @@ This project demonstrates how to perform an ETL process using Python, MySQL, and
 ## Project Structure
 The project has the following structure:<br>
 |-- `etl.py` <br>
-|-- `SRDataEngineerChallenge_DATASET.csv` <br>
+|-- `DATASET.csv` <br>
 |-- `docker-compose.yml` <br>
 |-- `Dockerfile` <br>
 
 - etl.py contains the ETL logic which reads the CSV file (i.e Packaged in the docker folder) and loads it in to the MySQL server running on docker.
-- SRDataEngineerChallenge_DATASET.csv contains the dummy information and data about the users.
+- DATASET.csv contains the dummy information and data about the users.
 - docker-compose.yml and Dockerfile are used to create a Docker container for the project.
 
 ## Steps to run the project
